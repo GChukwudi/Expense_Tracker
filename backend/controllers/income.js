@@ -41,13 +41,13 @@ exports.getIncome = async (req, res) => {
 // delete income
 exports.deleteIncome = async (req, res) => {
     const { id } = req.params;
-    console.log(req.params);
-    // IncomeSchema.findByIdAndDelete(id)
-    //     .then((income) => {
-    //         res.status(200).json({message: 'Income deleted successfully'})
-    //     })
-    //     .catch((error) => {
-    //         // console.log('Error deleting income', error)
-    //         res.status(500).json({message: 'Internal server error'})
-    //     })
+    // console.log(params);
+    IncomeSchema.findByIdAndDelete(id)
+        .then((income) => {
+            res.status(200).json({message: 'Income deleted successfully'})
+        })
+        .catch((error) => {
+            // console.log('Error deleting income', error)
+            res.status(500).json({message: 'Internal server error'})
+        })
 }
