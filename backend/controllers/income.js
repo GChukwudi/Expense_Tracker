@@ -24,6 +24,5 @@ exports.addIncome = async (req, res) => {
         console.log('Error adding income', error)
         res.status(500).json({message: 'Internal server error'})
     }
-
-    console.log(income)
+    // console.log(income)
 }
