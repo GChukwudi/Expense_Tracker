@@ -26,3 +26,28 @@ exports.addIncome = async (req, res) => {
     }
     // console.log(income)
 }
+
+// Get all income
+exports.getIncome = async (req, res) => {
+    try {
+        const income = await IncomeSchema.find().sort({createdAt: -1})
+        res.status(200).json({income})
+    } catch (error) {
+        // console.log('Error getting income', error)
+        res.status(500).json({message: 'Internal server error'})
+    }
+}
+
+// delete income
+exports.deleteIncome = async (req, res) => {
+    const { id } = req.params;
+    console.log(params);
+    // IncomeSchema.findByIdAndDelete(id)
+    //     .then((income) => {
+    //         res.status(200).json({message: 'Income deleted successfully'})
+    //     })
+    //     .catch((error) => {
+    //         // console.log('Error deleting income', error)
+    //         res.status(500).json({message: 'Internal server error'})
+    //     })
+}
