@@ -20,5 +20,8 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-family: 'Nunito', sans-serif;
         background-color: #f4f4f4;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        overflow: hidden;
+        color: rgba(34, 34, 96, 0.8);
     }
 `;
