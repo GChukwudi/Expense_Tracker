@@ -1,19 +1,22 @@
 import styled from "styled-components";
+import { MainLayout } from "./styles/layouts";
+import Object from "./components/Object";
 
 
 function App() {
   return (
     <AppStyled className="App">
-      <main>
-
-      </main>
+      <Object />
+      <MainLayout>
+        
+      </MainLayout>
     </AppStyled>
   );
 }
 
 const AppStyled = styled.div`
   height: 100vh;
-  background-color: #FFB6C1;
+  background-color: light-pink;
   position: relative;
 `;
 
