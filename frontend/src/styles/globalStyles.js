@@ -8,20 +8,20 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
 
-    :root {
-        --primary-color: #007bff;
-        --primary-color2: 'color: rgba(0, 123, 255, 0.5)';
-        --primary-color3: 'color: rgba(0, 123, 255, 0.1)';
-        --color-green: #28a745;
-        --color-grey: #6c757d;
-        --color-accent: #17a2b8;
-        --color-delete: #dc3545;
+    :root{
+        --primary-color: #222260;
+        --primary-color2: 'color: rgba(34, 34, 96, .6)';
+        --primary-color3: 'color: rgba(34, 34, 96, .4)';
+        --color-green: #42AD00;
+        --color-grey: #aaa;
+        --color-accent: #F56692;
+        --color-delete: #FF0000;
     }
-    body {
+
+    body{
         font-family: 'Nunito', sans-serif;
-        background-color: #f4f4f4;
-        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
         overflow: hidden;
-        color: rgba(34, 34, 96, 0.8);
+        color: rgba(34, 34, 96, .6);
     }
 `;

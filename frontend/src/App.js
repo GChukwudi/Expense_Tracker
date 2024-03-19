@@ -11,7 +11,7 @@ function App() {
 
 const AppStyled = styled.div`
   height: 100vh;
-  back
+  background-color: var(--primary-color3);
 `;
 
 export default App;
