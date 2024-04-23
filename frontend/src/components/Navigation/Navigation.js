@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import avatar from "../../assets/avatar.jpg";
+import { menuItems } from "../../utils/menuItems";
 
 
 function Navigation() {
@@ -14,7 +15,14 @@ function Navigation() {
         </div>
       </div>
       <ul className="menu-items">
-
+        {menuItems.map((item) => {
+          return <li
+          key={item.id}
+          >
+            {item.icon}
+            <span>{item.title}</span>
+          </li>
+        })}
       </ul>
     </NavStyled>
     );
