@@ -1,8 +1,10 @@
+import { dashboard } from "../utils/icons";
+
 export const menuItems = [
     {
         id: 1,
         title: 'Dashboard',
-        icon: '',
+        icon: 'dashboard',
         path: '/dashboard'
     },
     {
