@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MainLayout } from "./styles/layouts";
-import Object from "./components/Object";
+import Object from "./components/Object/Object";
+import Navigation from "./components/Navigation/Navigation";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <AppStyled className="App">
       <Object />
       <MainLayout>
-        
+        <Navigation />
       </MainLayout>
     </AppStyled>
   );
