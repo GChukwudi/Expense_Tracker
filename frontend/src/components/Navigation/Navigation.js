@@ -8,7 +8,14 @@ function Navigation() {
     <NavStyled>
       <div className="user-container">
         <img src={avatar} alt="avatar" />
+        <div className="user-info">
+            <h4>John Doe</h4>
+            <p>Balance</p>
+        </div>
       </div>
+      <ul className="menu-items">
+
+      </ul>
     </NavStyled>
     );
 }
