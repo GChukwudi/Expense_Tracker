@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MainLayout } from "./styles/layouts";
-import Object from "./components/Object/Object";
+import Object from "./components/Object";
 // import Navigation from "./components/Navigation/Navigation";
 
 
