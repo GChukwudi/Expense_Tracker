@@ -1,10 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import { MainLayout } from "./styles/layouts";
 import Object from "./components/Object";
-// import Navigation from "./components/Navigation/Navigation";
 import Navigation from "./components/Navigation/Navigation";
-import { useState } from "react";
 
 
 function App() {
