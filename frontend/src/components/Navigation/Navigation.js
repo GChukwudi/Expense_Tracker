@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import avatar from "../../img/avatar.png";
 import { menuItems } from "../../utils/menuItems";
@@ -6,10 +6,11 @@ import { signout } from "../../utils/icons";
 
 
 function Navigation() {
+  const [active, setActive] = useState(0);
   return (
     <NavStyled>
       <div className="user-container">
-        <img src={avatar} alt="avatar" className="user-img" />
+        <img src={avatar} alt="avatar" />
         <div className="user-info">
             <h4>God'sfavour Chukwudi</h4>
             <p>Balance</p>
@@ -49,22 +50,50 @@ const NavStyled = styled.nav`
   gap: 2rem;
 
   .user-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     img {
       width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            background: #fcf6f9;
-            border: 2px solid #FFFFFF;
-            padding: .2rem;
-            box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fcf6f9;
+      border: 2px solid #FFFFFF;
+      padding: .2rem;
+      box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
+    }
+    h4{
+      color: rgba(34, 34, 96, 1);
+    }
+    p{
+      color: rgba(34, 34, 96, 0.6);
     }
   }
-  // .user-img {
-  //   width: 50px;
-  //   height: 50px;
-  //   border-radius: 50%;
-  // }
+
+  .menu-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    li {
+      display: grid;
+      grid-template-columns: 40px auto;
+      align-items: center;
+      margin: .6rem 0;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+      color: rgba(34, 34, 96, 0.6);
+      padding-left: 1rem;
+      position: relative;
+      i{
+        color: rgba(34, 34, 96, 0.6);
+        font-size: 1.25rem;
+        transition: all .4s ease-in-out;
+      }
+    }
+  }
 `;
 
 export default Navigation;

@@ -1,11 +1,12 @@
-export const dashboard = <i className ="fa-regular fa-house"></i>;
+// export const dashboard = <i className ="fa-regular fa-house"></i>;
+export const dashboard = <i class="fa-solid fa-house"></i>
 export const transactionIcon = <i className ="fa-regular fa-credit-card"></i>;
 export const categories = <i className ="fa-regular fa-tags"></i>;
 export const accounts = <i className ="fa-regular fa-wallet"></i>;
 export const settings = <i className ="fa-regular fa-cog"></i>;
 export const logout = <i className ="fa-regular fa-sign-out"></i>;
-export const trends = <i className ="fa-regular fa-money-bill-trend-up"></i>;
-export const expenses = <i className ="fa-regular fa-money-bill-transfer"></i>;
+export const trends = <i className ="fa-solid fa-money-bill-trend-up"></i>;
+export const expenses = <i className ="fa-solid fa-money-bill-transfer"></i>;
 export const money = <i className ="fa-regular fa-money-bill"></i>;
 export const freelance = <i className ="fa-regular fa-earth-americas"></i>;
 export const stocks = <i className ="fa-regular fa-arrow-trend-up"></i>;
@@ -19,7 +20,7 @@ export const calendar = <i className ="fa-regular fa-calendar"></i>;
 export const comment = <i className ="fa-regular fa-comment"></i>;
 export const plus = <i className ="fa-regular fa-plus"></i>;
 export const trash = <i className ="fa-regular fa-trash"></i>;
-export const signout = <i className ="fa-regular fa-right-from-bracket"></i>;
+export const signout = <i className ="fa-solid fa-right-from-bracket"></i>;
 export const takeaway = <i className ="fa-regular fa-uteensils"></i>;
 export const clothing = <i className ="fa-regular fa-tshirt"></i>;
 export const book = <i className ="fa-regular fa-book-open"></i>;
