@@ -9,9 +9,9 @@ function Navigation() {
   return (
     <NavStyled>
       <div className="user-container">
-        <img src={avatar} alt="avatar" />
+        <img src={avatar} alt="avatar" className="user-img" />
         <div className="user-info">
-            <h4>John Doe</h4>
+            <h4>God'sfavour Chukwudi</h4>
             <p>Balance</p>
         </div>
       </div>
@@ -36,12 +36,35 @@ function Navigation() {
 }
 
 const NavStyled = styled.nav`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 1rem 10rem;
-//   background-color: #282828;
-//   position: sticky;
-//   top: 0;
-//   z-index: 10;
+  padding: 2rem 1.5rem;
+  width: 374px;
+  height: 100%;
+  background: rgba(255, 246, 249, 0.78);
+  border: 3px solid #FFFFFF;
+  backdrop-filter: blur(4.5px);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .user-container {
+    img {
+      width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #fcf6f9;
+            border: 2px solid #FFFFFF;
+            padding: .2rem;
+            box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
+    }
+  }
+  // .user-img {
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  // }
 `;
+
+export default Navigation;

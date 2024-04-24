@@ -2,14 +2,15 @@ import styled from "styled-components";
 import { MainLayout } from "./styles/layouts";
 import Object from "./components/Object";
 // import Navigation from "./components/Navigation/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 
 
 function App() {
   return (
     <AppStyled className="App">
-      <Object />
       <MainLayout>
-        {/* <Navigation /> */}
+        <Object />
+        <Navigation />
       </MainLayout>
     </AppStyled>
   );
