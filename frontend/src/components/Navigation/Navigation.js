@@ -5,8 +5,8 @@ import { menuItems } from "../../utils/menuItems";
 import { signout } from "../../utils/icons";
 
 
-function Navigation() {
-  const [active, setActive] = useState(0);
+function Navigation(active, setActive) {
+
   return (
     <NavStyled>
       <div className="user-container">
