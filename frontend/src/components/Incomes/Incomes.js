@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 function Income() {
     return (
-        <IncomesStyled>Incomes</IncomesStyled>
+        <IncomesStyled>
+            <innerHeight>
+                
+            </innerHeight>
+        </IncomesStyled>
     )
 }
 

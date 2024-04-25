@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { InnerLayout } from "../../styles/layouts";
 
 
 function Dashboard() {
     return (
-        <DashboardStyled>Dashboard</DashboardStyled>
+        <DashboardStyled>
+            <InnerLayout>
+                
+            </InnerLayout>
+        </DashboardStyled>
     )
 }
 

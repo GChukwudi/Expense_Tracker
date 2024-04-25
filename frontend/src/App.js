@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { MainLayout } from "./styles/layouts";
 import Object from "./components/Object/Object";
 import Navigation from "./components/Navigation/Navigation";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Income from "./components/Incomes/Incomes";
+import Expense from "./components/Expenses/Expenses";
 
 
 function App() {
@@ -11,15 +14,15 @@ function App() {
   const displayData = () => {
     switch(active) {
       case 1:
-        // return <Dashboard />;
+        return <Dashboard />;
       case 2:
-        return <h1>View Transactions</h1>
+        return <Dashboard />;
       case 3:
-        return <h1>Incomes</h1>
+        return <Income />;
       case 4:
-        return <h1>Expenses</h1>
+        return <Expense />;
       default:
-        return <h1>Dashboard</h1>
+        return <Dashboard />;
     }
   }
 

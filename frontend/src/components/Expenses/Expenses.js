@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 function Expense() {
     return (
-        <ExpensesStyled>Expenses</ExpensesStyled>
+        <ExpensesStyled>
+            <InnerLayout>
+                
+            </InnerLayout>
+        </ExpensesStyled>
     )
 }
 
