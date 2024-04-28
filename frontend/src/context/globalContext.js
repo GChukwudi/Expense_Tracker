@@ -1,4 +1,4 @@
-import React, {createContext} from "react";
+import React, {createContext, useState} from "react";
 import axios from "axios";
 
 const BASE_URL = "http://localhost:6000/api/v1/";
@@ -18,10 +18,11 @@ export const GlobalProvider = ({children}) => {
             });
     }
     return (
-        <GlobalContext.Provider value={{
-            addIncome
-        }}>
+        <GlobalContext.Provider value={'hello'}>
             {children}
         </GlobalContext.Provider>
     )
 }
+
+
+export default GlobalContext;
