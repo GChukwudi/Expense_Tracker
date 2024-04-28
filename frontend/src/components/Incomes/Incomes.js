@@ -5,13 +5,14 @@ import { InnerLayout } from "../../styles/layouts";
 function Income() {
     return (
         <IncomesStyled>
-            <innerHeight>
+
+            <InnerLayout>
                 <h1>Incomes</h1>
                 <div className="income-content">
                     <div className="form-container"></div>
                     <div className="incomes"></div>
                 </div>
-            </innerHeight>
+            </InnerLayout>
         </IncomesStyled>
     )
 }

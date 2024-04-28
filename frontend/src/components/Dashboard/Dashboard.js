@@ -7,7 +7,10 @@ function Dashboard() {
     return (
         <DashboardStyled>
             <InnerLayout>
-                
+                <h1>Dashboard</h1>
+                <div className="dashboard-content">
+                    <div className="overview"></div>
+                    <div className="expense"></div>
             </InnerLayout>
         </DashboardStyled>
     )
